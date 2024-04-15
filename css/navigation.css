@@ -97,7 +97,7 @@ nav {
   }
   
   nav button path {
-    stroke: var(--primary-color);
+    stroke: var(--color-white);
   }
   
   nav path {
