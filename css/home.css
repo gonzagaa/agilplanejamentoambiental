@@ -1,0 +1,190 @@
+:root {
+    font-size: 62.5%;
+
+    --primary-color: #322e6a;
+    --secondary-color: #008f4e;
+    --color-text: #fff;
+    --paragraphy-color: #626262;
+
+    --gradient-green: linear-gradient(to right, #008F4E, #33A571 100%);
+
+    --nav-height: 7.2rem;
+}
+
+/* HOME =================== */
+#home {
+    overflow: hidden;
+    min-height: 100vh;
+
+    background-image: url(../assets/bg\ image.jpg);
+    padding-block: 3rem;
+
+    position: relative;
+}
+
+#home img.lines {
+    position: absolute;
+    top: 50%;
+    left: -65rem;
+    transform: translate(0, -50%);
+    width: 40%;
+    z-index: 1;
+    opacity: .7;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #f1f1f1ef, #dfdfdfec);
+}
+  
+#home .content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 5rem;
+}
+
+#home .image img {
+    width: 100%;
+}
+
+#home .content .text {
+    margin-top: var(--nav-height);
+}
+  
+#home .content h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--color-black);
+
+    margin-bottom: 1rem;
+}
+
+#home .content h1 span {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#home .content h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#home .topics .topic {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+#home .topics .topic ion-icon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+#home .topics .topic p {
+    font-weight: 400;
+}
+
+#home a button {
+    margin-top: 2rem;
+    border: none;
+    background: var(--gradient-green);
+    color: var(--color-white);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#home a button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #a5a5a5;
+}
+
+@media (min-width: 1080px) {  
+    header#home {
+        height: 90vh;
+        padding-block: initial;
+    }
+ 
+    header#home .content {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    header#home .wrapper .text {
+        margin-top: initial;
+    }
+
+    header#home .wrapper .content h1 {
+        font-size: 9rem;
+        line-height: 1.2;
+    }
+
+    header#home .wrapper .content h2 {
+        font-size: 3rem;
+    }
+
+    header#home .wrapper .topics .topic ion-icon {
+        font-size: 3rem;
+    }
+    
+    header#home .wrapper .topics .topic p {
+        font-size: 2rem;
+    }
+
+    header#home a button {
+        font-size: 2rem;
+    }
+
+}
+   
+
+@media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }

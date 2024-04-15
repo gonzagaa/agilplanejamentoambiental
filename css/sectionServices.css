@@ -1,0 +1,220 @@
+:root {
+    font-size: 62.5%;
+
+    --primary-color: #322e6a;
+    --secondary-color: #008f4e;
+    --color-text: #fff;
+    --paragraphy-color: #626262;
+
+    --color-black: #000E07;
+    --color-white: #E5F3ED;
+
+    --bg-color: #f1f1f1;
+
+    --helvetica: 'Helvetica';
+    --helveticaLight: 'HelveticaLight';
+    --helveticaBold: 'HelveticaBold';
+}
+
+#services {
+    background: var(--bg-color);
+    padding-bottom: 20rem;
+}
+
+#services header {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#services header span {
+    color: var(--color-black);
+    opacity: .5;
+}
+
+#services header h2 {
+    color: var(--color-black);
+    margin-top: .5rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    position: relative;
+}
+
+#services header h2::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    border-radius: 2rem;
+    height: 100%;
+    top: 0;
+    left: -1.5rem;
+    background: var(--secondary-color);
+}
+
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+}
+
+#services .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+    position: relative;
+}
+
+#services .cards .card .text {
+    position: absolute;
+    top: 60%;
+    max-width: 30rem;
+
+    padding: 1.5rem;
+    backdrop-filter: blur(17px) saturate(180%);
+    -webkit-backdrop-filter: blur(17px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+#services .cards .card img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+#services .cards .card h3 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#services .cards .card p {
+    color: var(--color-black);
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+#services .cards .card ion-icon.check {
+    position: absolute;
+    background: var(--color-white);
+    color: var(--secondary-color);
+    padding: .5rem;
+    border-radius: 50%;
+    top: -1rem;
+    left: -1rem;
+    font-size: 2rem;
+    border: 1px solid var(--secondary-color);
+}
+
+#services .cards .card a {
+    text-decoration: none;
+}
+
+#services .cards .card a button {
+    background: var(--secondary-color);
+    color: var(--color-white);
+
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+
+    transition: all 200ms ease-in-out;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#services .cards .card a button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 15px #62626259;
+}
+
+#services .cards .card a button ion-icon {
+    color: var(--color-white);
+    transform: rotate(0);
+    font-size: 2rem;
+    transition: all 200ms ease-in-out;
+}
+
+#services .cards .card a button:hover ion-icon {
+    transform: rotate(-45deg) translateX(2px);
+}
+
+@media (min-width: 1080px) {  
+    .wrapper {
+        width: min(112rem, 100%);
+      }
+    
+    section#services header span {
+        font-size: 1.8rem;
+    }
+
+    section#services header h2 {
+        font-size: 4rem;
+    }
+
+    section#services .wrapper .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    section#services .wrapper .cards .card .text {
+        left: 1rem;
+        max-width: 35rem;
+
+        background-color: rgba(255, 255, 255, 0.521);
+
+        box-shadow:  13px 13px 26px #cdcdcd2c,
+             -13px -13px 26px #4e4e4e33;
+    }
+
+    section#services .cards .card img {
+        box-shadow:  13px 13px 26px #cdcdcd,
+             -13px -13px 26px #ffffff;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+
+    section#services .wrapper .cards .card .text {
+        max-width: 40rem;
+    }
+
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }

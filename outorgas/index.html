@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágil Planejamento Ambiental</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/logo_white.png" type="image/x-icon">
+</head>
+<body>
+    
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="../index.html">
+                <img src="../assets/Logo Ágil Small Branco.svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="../index.html">Home</a></li>
+                    <li><a onclick="closeMenu()" href="">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="">Downloads</a></li>
+                    <li><a onclick="closeMenu()" href="">Notícias e Legislação</a></li>
+                    <li><a onclick="closeMenu()" href="">Contato</a></li>
+                    
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/Logo Ágil Large Branco.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+   <section id="outorgas">
+    <div class="wrapper">
+        <header>
+            <h1>Serviços - <span>Outorgas</span></h1>
+        </header>
+
+        <div class="cards">
+            <div class="card left">
+                <div class="image">
+                    <img src="../assets/Outorga de água – captações superficiais.jpg" alt="">
+                </div>
+
+                <div class="text">
+                    <h3>Outorga de água – captações superficiais</h3>
+                    <p>A outorga de água é a autorização ou permissão que o Estado ou a União delegam ao usuário de recursos hídricos para que ele possa realizar o uso pretendido, como uma barragem, ponte, irrigação, ou outros…</p>
+                    <a href="#"><button>Fale com nossa equipe</button></a>
+                </div>
+            </div>
+
+            <div class="card right">
+                <div class="image">
+                    <img src="../assets/Outorga de água para barramentos.jpg" alt="">
+                </div>
+
+                <div class="text">
+                    <h3>Outorga de água para barramentos</h3>
+                    <p>Outorga de uso da água para equipamentos com captação em barragens e direta no manancial. Esta outorga inclui condições e requisitos que a empresa deve cumprir, como a realização de estudos ambientais e a garantia de segurança para as pessoas e o meio ambiente.</p>
+                    <a href="#"><button>Fale com nossa equipe</button></a>
+                </div>
+            </div>
+
+            <div class="card left">
+                <div class="image">
+                    <img src="../assets/Outorga de águas subterrâneas.jpg" alt="">
+                </div>
+
+                <div class="text">
+                    <h3>Outorga de águas subterrâneas</h3>
+                    <p>A outorga de direito de uso dos recursos hídricos é um componente da Política Nacional de Recursos Hídricos no qual o Poder Público autoriza, concede ou permite ao usuário fazer o uso deste bem público.</p>
+                    <a href="#"><button>Fale com nossa equipe</button></a>
+                </div>
+            </div>
+
+            <div class="card right">
+                <div class="image">
+                    <img src="../assets/Outorga de água e licenciamentos para piscicultura.jpg" alt="">
+                </div>
+
+                <div class="text">
+                    <h3>Outorga de água e licenciamentos para piscicultura</h3>
+                    <p>autorização legal para estabelecer e operar suas fazendas de peixes. Esse processo é essencial para garantir que as atividades de piscicultura sejam realizadas de maneira sustentável e em conformidade com as regulamentações ambientais e de saúde.</p>
+                    <a href="#"><button>Fale com nossa equipe</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="../assets/Logo Ágil Large.svg" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#services">Sobre nós</a></p>
+                    <p><a href="#time">Serviços</a></p>
+                    <p><a href="#clientes">Downloads</a></p>
+                    <p><a href="#clientes">Notícias e Legislação</a></p>
+                    <p><a href="#contato">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>R. 1029 - St. Pedro Ludovico, Goiânia - GO, 74823-140</p>
+                    <p><a target="_blank" href="tel:+55-62-99844-7900">(62) 99844-7900</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href="https://wa.link/ge6c2z"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - ÁGIL PLANEJAMENTO AMBIENTAL</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="../assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="">
+
+        <img src="./assets/whatsapp logo.webp" alt="">
+
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

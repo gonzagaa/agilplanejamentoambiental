@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágil Planejamento Ambiental</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/logo_white.png" type="image/x-icon">
+</head>
+<body>
+    
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/Logo Ágil Small Branco.svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="">Downloads</a></li>
+                    <li><a onclick="closeMenu()" href="">Notícias e Legislação</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                    
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/Logo Ágil Large Branco.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <h1>Evite surpresas, <span>seja ágil</span></h1>
+                    <h2>Compromisso, qualidade e agilidade.</h2>
+
+                    <div class="topics">
+                        <div class="topic">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <p>Licenciamentos de outorga</p>
+                        </div>
+
+                        <div class="topic">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <p>Licenciamentos de barragens</p>
+                        </div>
+
+                        <div class="topic">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <p>Autorizações pra desmatamento</p>
+                        </div>
+                    </div>
+
+                    <a href="#"><button>Conheça nossos serviços</button></a>
+                </div>
+                <div class="image">
+                    <img src="./assets/images agil (1).png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <img class="lines" src="./assets/agil lines logo.svg" alt="">
+    </header>
+
+    <section id="services">
+       <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span>AGILIZAMOS SEU TEMPO</span>
+                    <h2>Conheça alguns de nossos serviços</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <ion-icon class="check" name="checkmark-done-outline"></ion-icon>
+                        <img src="./assets/outorgas.jpg" alt="">
+                        <div class="text">
+                            <h3>Outorgas</h3>
+                            <p>Outorgas para captações superficiais, barramentos, represas, poços artesianos, mini-poços, piscicultura e mais...</p>
+                            <a href="./outorgas/index.html"><button>Saiba mais <ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                       </div>
+                    </div>
+
+                    <div class="card">
+                        <ion-icon class="check" name="checkmark-done-outline"></ion-icon>
+                        <img src="./assets/licenciamentos.jpg" alt="">
+                        <div class="text">
+                            <h3>Licenciamentos</h3>
+                            <p>Licenciamentos ambientais de barragens, autorizações de desmatamento, confinamentos, armazém de grãos e mais...</p>
+                            <a href="#"><button>Saiba mais <ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <ion-icon class="check" name="checkmark-done-outline"></ion-icon>
+                        <img src="./assets/outros.jpg" alt="">
+                        <div class="text">
+                            <h3>Outros...</h3>
+                            <p>Cadastramento ambiental rural-CAR, defesa de multas ambientais, Dimensionamento de volume e segurança para barragens e mais... </p>
+                            <a href="#"><button>Saiba mais <ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section id="sobre">
+        <video class="background" autoplay muted loop>
+            <source src="./assets/video agil.mp4" type="video/mp4">
+        </video>
+
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span>SOBRE NÓS</span>
+                    <h2>Entenda quem somos</h2>
+                </header>
+
+                <div class="text-box">
+                    <video autoplay muted loop>
+                        <source src="./assets/video agil.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="text">
+                        <h3>Caminhamos ao lado do homem do campo;</h3>
+                        <p>Nos destacamos pelo compromisso com nossos clientes e qualidade dos serviços prestados que, de maneira objetiva, busca sempre conciliar o desenvolvimento das atividades econômicas com o respeito ao meio ambiente.</p>
+
+                        <h3>Parceiros;</h3>
+                        <div class="parceiros">
+                            <img src="./assets/prismaeng.png" alt="">
+                            <img src="./assets/centralirrigacaoi.png" alt="">
+                        </div>
+
+                        <a href="#"><button>Saiba mais <ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/Logo Ágil Large.svg" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#services">Sobre nós</a></p>
+                    <p><a href="#time">Serviços</a></p>
+                    <p><a href="#clientes">Downloads</a></p>
+                    <p><a href="#clientes">Notícias e Legislação</a></p>
+                    <p><a href="#contato">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>R. 1029 - St. Pedro Ludovico, Goiânia - GO, 74823-140</p>
+                    <p><a target="_blank" href="tel:+55-62-99844-7900">(62) 99844-7900</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href="https://wa.link/ge6c2z"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - ÁGIL PLANEJAMENTO AMBIENTAL</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="">
+
+        <img src="./assets/whatsapp logo.webp" alt="">
+
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

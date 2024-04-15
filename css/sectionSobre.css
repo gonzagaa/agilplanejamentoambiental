@@ -1,0 +1,218 @@
+#sobre {
+    position: relative;
+}
+
+#sobre video.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(.5);
+    display: none;
+}
+
+#sobre::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #008f4f, #33A571 100%);
+}
+
+#sobre .content {
+    position: relative;
+    z-index: 3;
+}
+
+#sobre header {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#sobre header span {
+    color: var(--color-white);
+    opacity: .5;
+}
+
+#sobre header h2 {
+    color: var(--color-white);
+    margin-top: .5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative; 
+}
+
+#sobre header h2::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    border-radius: 2rem;
+    height: 100%;
+    top: 0;
+    left: -1.5rem;
+    background: var(--color-white);
+}
+
+#sobre .text-box .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#sobre .text-box video {
+    width: 100%;
+    border-radius: 1rem;
+
+    box-shadow:  17px 17px 35px #007a42,
+             -17px -17px 35px #00a45a5e;
+
+    margin-bottom: 2rem;
+}
+
+#sobre .text-box h3 {
+    font-size: 1.8rem;
+    color: var(--color-white);
+    font-weight: 500;
+    text-align: left;
+}
+
+#sobre .text-box p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+    opacity: .8;
+}
+
+#sobre .text-box .parceiros {
+    display: flex;
+    align-items: center;
+}
+
+#sobre .text-box .parceiros img {
+    width: 40%;
+}
+
+#sobre .text-box a {
+    text-decoration: none;
+}
+
+#sobre .text-box a button {
+    margin-top: 3rem;
+    border: none;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+
+    transition: all 200ms ease-in-out;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#sobre .text-box a button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #666666a6;
+}
+
+#sobre .text-box a button ion-icon {
+    color: var(--color-black);
+    transition: all 200ms ease-in-out;
+}
+
+#sobre .text-box a button:hover ion-icon {
+    transform: translateX(3px);
+}
+
+@media (min-width: 1080px) {  
+    .wrapper {
+        width: min(112rem, 100%);
+      }
+
+    section#sobre video.background {
+        display: inherit;
+    }
+
+    section#sobre::before {
+        background: linear-gradient(to right, #008f4fd3, #33A571 100%);
+    }
+
+    section#sobre header span {
+        font-size: 1.8rem;
+    }
+
+    section#sobre header h2 {
+        font-size: 4rem;
+    }
+
+    section#sobre .text-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 8rem;
+    }
+
+    section#sobre .text-box video {
+        width: 100%;
+    }
+
+    section#sobre .text-box h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    section#sobre .text-box p {
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+    }
+
+    section#sobre .text-box .parceiros img {
+        width: 30%;
+    }
+
+    section#sobre .text-box a button {
+        font-size: 2rem;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }
