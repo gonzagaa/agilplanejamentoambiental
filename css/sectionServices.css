@@ -98,7 +98,7 @@
 #services .cards .card p {
     color: var(--color-black);
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
@@ -183,6 +183,18 @@
     section#services .cards .card img {
         box-shadow:  13px 13px 26px #cdcdcd,
              -13px -13px 26px #ffffff;
+    }
+
+    section#services .wrapper .cards .card .text h3 {
+        font-size: 2.5rem;
+    }
+
+    section#services .wrapper .cards .card .text p {
+        font-size: 1.8rem;
+    }
+
+    section#services .wrapper .cards .card .text a button {
+        font-size: 1.8rem;
     }
 }
 

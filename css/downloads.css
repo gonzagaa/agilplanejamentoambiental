@@ -1,0 +1,221 @@
+nav#navigation {
+    background: var(--secondary-color);
+    opacity: 1;
+}
+
+#downloads {
+    background: var(--bg-color);
+    padding-block: 10rem;
+
+    overflow: hidden;
+}
+
+#downloads header {
+    margin-bottom: 5rem;
+    text-align: left;
+}
+
+#downloads header h1 {
+    color: var(--color-black);
+    margin-top: .5rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    position: relative;
+}
+
+#downloads header h1 span {
+    color: var(--color-black);
+    opacity: .5;
+}
+
+#downloads header h1::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    border-radius: 2rem;
+    height: 100%;
+    top: 0;
+    left: -1.5rem;
+    background: var(--secondary-color);
+}
+
+#downloads .downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+#downloads .downloads h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    color: var(--color-black);
+
+    position: relative;
+}
+
+#downloads .downloads h2::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 4px;
+    border-radius: 2rem;
+    background: var(--gradient-green);
+    top: -1rem;
+    left: 0;
+}
+
+#downloads .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+}
+
+#downloads .cards .card {
+    position: relative;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-top: 5rem;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 1rem;
+
+    box-shadow:  11px 11px 23px #cdcdcd,
+             -11px -11px 23px #ffffff;
+
+}
+
+#downloads .cards .card img {
+    width: 5rem;
+    background: var(--gradient-green);
+    padding: 1rem;
+    border-radius: 2rem;
+
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+}
+
+#downloads .cards .card h3 {
+    font-size: 2.5rem;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+#downloads .cards .card p {
+    color: var(--color-black);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#downloads .cards .card a {
+    text-decoration: none;
+}
+
+#downloads .cards .card a button {
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    background: var(--gradient-green);
+    border: none;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    margin-top: 1rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#downloads .cards .card a button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+@media (min-width: 1080px) {  
+    section#downloads .wrapper {
+        width: min(112rem, 100%);
+      }
+
+    section#downloads header h1 {
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    section#downloads header h1::before {
+        display: none;
+    }
+
+    section#downloads header h1::after {
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 4px;
+        bottom: -2rem;
+        left: 50%;
+        transform: translate(-50%);
+        background: var(--gradient-green);
+    }
+
+    section#downloads .wrapper h2 {
+        font-size: 2rem;
+        margin-bottom: 7rem;
+    }
+
+    section#downloads .wrapper h2::before {
+        width: 100%;
+        top: initial;
+        bottom: -1rem;
+
+        background: linear-gradient(to right, #008F4E 10%, #33a57200 100%);
+    }
+
+    section#downloads .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+
+    section#downloads .cards .card a button {
+        font-size: 1.8rem;
+        padding: 1rem 4rem;
+    }
+
+    section#downloads .cards.licenciamento .card {
+        min-height: 27rem;
+        justify-content: space-between;
+    }
+}
+
+  @media (min-width: 1200px) {
+    section#downloads .wrapper {
+      width: min(110rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    section#downloads .wrapper {
+      width: min(120rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    section#downloads .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    section#downloads .wrapper {
+      width: min(140rem, 100%);
+    }
+  }

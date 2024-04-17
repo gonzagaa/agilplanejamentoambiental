@@ -27,7 +27,7 @@
                     <li><a onclick="closeMenu()" href="#home">Home</a></li>
                     <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
                     <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-                    <li><a onclick="closeMenu()" href="">Downloads</a></li>
+                    <li><a onclick="closeMenu()" href="#downloads">Downloads</a></li>
                     <li><a onclick="closeMenu()" href="">Notícias e Legislação</a></li>
                     <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
                     
@@ -93,7 +93,11 @@
             </div>
         </div>
 
-        <img class="lines" src="./assets/agil lines logo.svg" alt="">
+        <div class="custom-shape-divider-bottom-1713358216">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </header>
 
     <section id="services">
@@ -152,9 +156,11 @@
                 </header>
 
                 <div class="text-box">
-                    <video autoplay muted loop>
-                        <source src="./assets/video agil.mp4" type="video/mp4">
-                    </video>
+                    <div class="video">
+                        <video autoplay muted loop>
+                            <source src="./assets/video agil.mp4" type="video/mp4">
+                        </video>
+                    </div>
 
                     <div class="text">
                         <h3>Caminhamos ao lado do homem do campo;</h3>
@@ -171,6 +177,32 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="downloads-section">
+        <img class="corrente um" src="./assets/corrente icon.svg" alt="">
+        <div class="wrapper">
+            <header>
+                <span>DOWNLOADS</span>
+                <h2>Downloads para outorgas e licenciamentos</h2>
+            </header>
+
+            <div class="text-box">
+                <div class="image">
+                    <img src="./assets/iPhone 15 Agil Mockup.webp" alt="">
+                </div>
+
+                <div class="text">
+                    <h3>Comprometidos com a agilidade;</h3>
+                    <p>Separamos uma lista de documentos necessários para outorgas e licenciamentos. Este recurso é projetado para facilitar o processo para nossos clientes, fornecendo informações claras e diretas sobre os documentos necessários para iniciar o processo de solicitação.</p>
+                    <div class="topics">
+                        <span><ion-icon name="checkmark-outline"></ion-icon> Outorga de água</span> <span><ion-icon name="checkmark-outline"></ion-icon> Licença de instalação</span> <span><ion-icon name="checkmark-outline"></ion-icon> Licença de barragem</span> <span><ion-icon name="checkmark-outline"></ion-icon> Dispensa de licenciamento</span>
+                    </div>
+                    <a href="./downloads/index.html"><button>Saiba mais <ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+                </div>
+            </div>
+        </div>
+        <img class="corrente dois" src="./assets/corrente icon.svg" alt="">
     </section>
 
     <footer id="footer">

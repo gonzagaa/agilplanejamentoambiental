@@ -4,6 +4,8 @@ footer {
     position: relative;
 
     padding-block: 8rem;
+
+    border-top: 2px solid #D2E8DF;
 }
 
 footer::before {

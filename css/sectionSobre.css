@@ -1,5 +1,6 @@
 #sobre {
     position: relative;
+    overflow: hidden;
 }
 
 #sobre video.background {
@@ -64,6 +65,22 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+#sobre .text-box .video {
+    position: relative;
+}
+
+#sobre .text-box .video::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: -2rem;
+    right: -1rem;
+    border: 2px solid var(--color-white);
+    border-radius: 1rem;
+    z-index: -1;
 }
 
 #sobre .text-box video {
@@ -162,6 +179,11 @@
         grid-template-columns: 1fr 1fr;
         align-items: start;
         gap: 8rem;
+    }
+
+    section#sobre .text-box .video::before {
+        width: 100%;
+        right: -2.5rem;
     }
 
     section#sobre .text-box video {
