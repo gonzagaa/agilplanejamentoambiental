@@ -46,6 +46,18 @@
     position: relative;
 }
 
+#home .blush {
+    width: 1500px;
+    height: 1500px;
+    background: radial-gradient(#008F4E, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: -70rem;
+    right: -100rem;
+    opacity: .5;
+  }
+
 #home img.lines {
     position: absolute;
     top: 50%;
@@ -64,7 +76,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #f1f1f1ef, #dfdfdfec);
+    background: linear-gradient(to right, #f1f1f1ef 20%, #dfdfdfce);
 }
   
 #home .content {
@@ -85,6 +97,7 @@
 
 #home .image img {
     width: 100%;
+    filter: drop-shadow(3px 3px 30px #a0a0a0);
 }
 
 #home .content .text {
@@ -152,6 +165,11 @@
         height: 90vh;
         padding-block: initial;
     }
+
+    header#home .blush {
+        top: -70rem;
+        right: -60rem;
+      }
 
     header#home .custom-shape-divider-bottom-1713358216 {
         display: inherit;

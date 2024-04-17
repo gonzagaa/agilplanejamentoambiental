@@ -110,15 +110,6 @@
     opacity: .8;
 }
 
-#sobre .text-box .parceiros {
-    display: flex;
-    align-items: center;
-}
-
-#sobre .text-box .parceiros img {
-    width: 40%;
-}
-
 #sobre .text-box a {
     text-decoration: none;
 }
@@ -199,10 +190,6 @@
         font-size: 2rem;
         line-height: 1.6;
         margin-bottom: 3rem;
-    }
-
-    section#sobre .text-box .parceiros img {
-        width: 30%;
     }
 
     section#sobre .text-box a button {
