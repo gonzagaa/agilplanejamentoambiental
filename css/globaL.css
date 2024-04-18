@@ -69,12 +69,12 @@ section {
   background: #d8d8d8;
 }
 
-  .wrapper {
-    width: min(50rem, 100%);
-    margin-inline: auto;
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
   
-    padding-inline: 2.4rem;
-  }
+  padding-inline: 2.4rem;
+}
 
   /*====  MEDIAS RESPONSIVES ============================ */
   @media (min-width: 1080px) {
@@ -114,12 +114,12 @@ section {
   /*====  scrollbar ============================ */
 ::-webkit-scrollbar {
   width: .6rem;
-  background-color: #0f0f0f;
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
   width: .6rem;
-  background: var(--gradient);
+  background: var(--gradient-green);
   border-radius: 1rem;
 }
 
