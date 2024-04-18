@@ -104,8 +104,8 @@
 
 #services .cards .card ion-icon.check {
     position: absolute;
-    background: var(--color-white);
-    color: var(--secondary-color);
+    background: var(--gradient-green);
+    color: var(--color-white);
     padding: .5rem;
     border-radius: 50%;
     top: -1rem;
