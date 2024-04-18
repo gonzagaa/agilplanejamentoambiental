@@ -3,6 +3,27 @@
     overflow: hidden;
 }
 
+.custom-shape-divider-top-1713453881 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-top-1713453881 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 21px;
+}
+
+.custom-shape-divider-top-1713453881 .shape-fill {
+    fill: var(--bg-color);
+}
+
 #contato::before {
     content: '';
     position: absolute;
@@ -140,7 +161,7 @@
         border-radius: 2rem;
         bottom: 0;
         left: 20%;
-        background: linear-gradient(to right, #ebebeb, #e0e0e0 100%);
+        background: var(--bg-color);
     }
 
     section#contato .contato .image img {
