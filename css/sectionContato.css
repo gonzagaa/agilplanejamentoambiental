@@ -1,0 +1,178 @@
+#contato {
+    position: relative;
+    overflow: hidden;
+}
+
+#contato::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #008f4f, #33A571 100%);
+}
+
+#contato .content {
+    position: relative;
+    z-index: 3;
+}
+
+#contato header {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#contato header span {
+    color: var(--color-white);
+    opacity: .5;
+}
+
+#contato header h2 {
+    color: var(--color-white);
+    margin-top: .5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    position: relative; 
+}
+
+#contato header h2::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    border-radius: 2rem;
+    height: 100%;
+    top: 0;
+    left: -1.5rem;
+    background: var(--color-white);
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 5rem;
+}
+
+#contato form label {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    color: var(--color-white);
+    opacity: .8;
+    font-weight: 400;
+}
+
+#contato form input {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    width: 100%;
+    border: 1px solid var(--color-white);
+    background: linear-gradient(to right, #ebebeb, #e0e0e0 100%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#contato form input:focus {
+    outline: 3px solid var(--secondary-color);
+}
+
+#contato form button {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+#contato form button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #666666a6;
+}
+
+@media (min-width: 1080px) {  
+    .wrapper {
+        width: min(112rem, 100%);
+      }
+
+    section#contato::before {
+        background: linear-gradient(to right, #008f4fd3, #33A571 100%);
+    }
+
+    section#contato header span {
+        font-size: 1.8rem;
+    }
+
+    section#contato header h2 {
+        font-size: 4rem;
+    }
+
+    section#contato .contato {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    section#contato form label {
+        font-size: 1.8rem;
+    }
+
+    section#contato form button {
+        font-size: 2rem;
+        gap: 1rem;
+    }
+
+    section#contato .contato .image {
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    section#contato .contato .image::before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 5px;
+        border-radius: 2rem;
+        bottom: 0;
+        left: 20%;
+        background: linear-gradient(to right, #ebebeb, #e0e0e0 100%);
+    }
+
+    section#contato .contato .image img {
+        margin-top: -15rem;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }
